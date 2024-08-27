@@ -31,7 +31,7 @@ export default function intro() {
         </div>
       </div>
 
-      <p>
+      <p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
         <span className="font-bold">Hello, I'm Sachinda Bandara.</span> I'm a{" "}
         <span className="font-bold">UI & UX Designer and Frontend Developer</span> with{" "}
         <span className="font-bold">8 years</span> of experience. I enjoy
