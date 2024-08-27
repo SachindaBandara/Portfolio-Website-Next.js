@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -11,12 +11,12 @@ export default function intro() {
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
-          initial = {{ opacity: 0, scale: 0 }}
-          animate = {{ opacity: 1, scale: 1 }}
-          transition={{
-            type: "tween",
-            duration: 0.2,
-          }}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "tween",
+              duration: 0.2,
+            }}
           >
             <Image
               src={Profile}
@@ -30,6 +30,14 @@ export default function intro() {
           </motion.div>
         </div>
       </div>
+
+      <p>
+        <span className="font-bold">Hello, I'm Sachinda Bandara.</span> I'm a{" "}
+        <span className="font-bold">UI & UX Designer and Frontend Developer</span> with{" "}
+        <span className="font-bold">8 years</span> of experience. I enjoy
+        creating <span className="italic">sites & apps</span>. My focus is{" "}
+        <span className="underline">React (Next.js)</span>.
+      </p>
     </section>
   );
 }
