@@ -30,8 +30,8 @@ export default function intro() {
             <Image
               src={Profile}
               alt="Sachinda Bandara"
-              width="192"
-              height="192"
+              width="210"
+              height="210"
               quality="95"
               priority={true}
               className="h-34 w-34 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
