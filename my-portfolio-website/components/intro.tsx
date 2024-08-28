@@ -3,10 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import Profile from "@/public/profile pic.jpg";
-import { motion } from "framer-motion";
-import { BsArrowRight } from "react-icons/bs";
+import { delay, motion } from "framer-motion";
+import { BsArrowRight, BsBehance, BsDribbble, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import Link from "next/link";
+import { FaGithubSquare } from "react-icons/fa";
 
 export default function intro() {
   return (
@@ -41,24 +42,43 @@ export default function intro() {
       >
         <span className="font-bold">Hello, I'm Sachinda Bandara.</span> I'm a{" "}
         <span className="font-bold">
-          UI & UX Designer and Frontend Developer
+          UI & UX Enthusiast and Frontend Developer
         </span>{" "}
         with <span className="font-bold">8 years</span> of experience. I enjoy
         creating <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.p>
 
-      <div>
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1
+        }}
+      >
         <Link
           href="#contact"
           className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full"
         >
           Contact me here <BsArrowRight />
         </Link>
-        <a>
+        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full">
           Download CV <HiDownload />
         </a>
-      </div>
+        <a href="https://www.linkedin.com/in/sachinda-bandara-2a9344248/" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full">
+          <BsLinkedin />
+        </a>
+        <a href="https://github.com/SachindaBandara" className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full">
+          <FaGithubSquare />
+        </a>
+        <a href="https://www.behance.net/sachindubandar/projects" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full">
+          <BsBehance />
+        </a>
+        <a href="https://dribbble.com/Sachinda_Bandara" className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full">
+          <BsDribbble />
+        </a>
+      </motion.div>
     </section>
   );
 }
