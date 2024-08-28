@@ -59,23 +59,23 @@ export default function intro() {
       >
         <Link
           href="#contact"
-          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact me here <BsArrowRight />
+          Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
         </Link>
-        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full">
-          Download CV <HiDownload />
+        <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
+          Download CV <HiDownload  className="opacity-60 group-hover:translate-y-1 transition"/>
         </a>
-        <a href="https://www.linkedin.com/in/sachinda-bandara-2a9344248/" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full">
+        <a href="https://www.linkedin.com/in/sachinda-bandara-2a9344248/" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
           <BsLinkedin />
         </a>
-        <a href="https://github.com/SachindaBandara" className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full">
+        <a href="https://github.com/SachindaBandara" className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
           <FaGithubSquare />
         </a>
-        <a href="https://www.behance.net/sachindubandar/projects" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full">
+        <a href="https://www.behance.net/sachindubandar/projects" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
           <BsBehance />
         </a>
-        <a href="https://dribbble.com/Sachinda_Bandara" className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full">
+        <a href="https://dribbble.com/Sachinda_Bandara" className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
           <BsDribbble />
         </a>
       </motion.div>
