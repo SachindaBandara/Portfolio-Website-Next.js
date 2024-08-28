@@ -4,6 +4,9 @@ import React from "react";
 import Image from "next/image";
 import Profile from "@/public/profile pic.jpg";
 import { motion } from "framer-motion";
+import { BsArrowRight } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import Link from "next/link";
 
 export default function intro() {
   return (
@@ -44,6 +47,18 @@ export default function intro() {
         creating <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.p>
+
+      <div>
+        <Link
+          href="#contact"
+          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full"
+        >
+          Contact me here <BsArrowRight />
+        </Link>
+        <a>
+          Download CV <HiDownload />
+        </a>
+      </div>
     </section>
   );
 }
