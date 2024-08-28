@@ -31,13 +31,19 @@ export default function intro() {
         </div>
       </div>
 
-      <p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
+      <motion.p
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
         <span className="font-bold">Hello, I'm Sachinda Bandara.</span> I'm a{" "}
-        <span className="font-bold">UI & UX Designer and Frontend Developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
+        <span className="font-bold">
+          UI & UX Designer and Frontend Developer
+        </span>{" "}
+        with <span className="font-bold">8 years</span> of experience. I enjoy
         creating <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
-      </p>
+      </motion.p>
     </section>
   );
 }
