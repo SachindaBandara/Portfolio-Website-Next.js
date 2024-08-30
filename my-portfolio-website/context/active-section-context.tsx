@@ -2,7 +2,7 @@
 
 import React, { useState, createContext, useContext } from "react";
 import { links } from "@/lib/data";
-import { error } from "console";
+
 
 type SectionName = (typeof links)[number]["name"];
 type ActiveSectionContextProviderProps = {
