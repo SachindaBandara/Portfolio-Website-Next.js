@@ -1,5 +1,8 @@
-import React, { useState, createContext } from "react";
+"use client"
+
+import React, { useState, createContext, useContext } from "react";
 import { links } from "@/lib/data";
+import { error } from "console";
 
 type SectionName = (typeof links)[number]["name"];
 type ActiveSectionContextProviderProps = {
@@ -8,9 +11,9 @@ type ActiveSectionContextProviderProps = {
 
 type ActiveSectionContextType = {
     activeSection: SectionName;
-    setActiveSection:
+    setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>
 }
-const ActiveSectionContext = createContext<ActiveSectionContextType>(null);
+export const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null);
 
 export default function ActiveSectionContextProvider({
   children,
@@ -25,4 +28,17 @@ export default function ActiveSectionContextProvider({
     {children}
   </ActiveSectionContext.Provider>
   );
+}
+
+export function useActiveSectionContext(){
+    const context = useContext(ActiveSectionContext);
+
+    if(context === null){
+        throw new Error(
+            "Error Message!"
+        );
+    }
+
+    return context;
+
 }
