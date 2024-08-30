@@ -16,7 +16,10 @@ import { FaGithubSquare } from "react-icons/fa";
 
 export default function intro() {
   return (
-    <section id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
+    <section
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -48,11 +51,12 @@ export default function intro() {
         <span className="font-bold">Hello, I'm Sachinda Bandara.</span> <br />
         I'm an{" "}
         <span className="font-bold">
-          UI & UX Enthusiast and Frontend Developer
+          UI/UX Enthusiast, Frontend Developer & Undergraduate
         </span>{" "}
-        with <span className="font-bold">8 years</span> of experience. I enjoy
-        creating <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span>at Sabaragamuwa University of Sri Lanka.</span><br/>
+        <span>I enjoy creating</span>
+        <span className="italic">sites & apps.</span>
+        
       </motion.h1>
 
       <motion.div
