@@ -8,7 +8,7 @@ import Link from "next/link";
 import clsx from "clsx";
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState("Home");
+  
 
   return (
     <header className="z-[999] relative">
