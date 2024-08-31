@@ -22,7 +22,7 @@ export default function Contact() {
       viewport={{ once: true }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-gray-700 -mt-4">
+      <p className="text-white -mt-4">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:jmsachindabandara@gmail.com">
           jmsachindabandara@gmail.com
