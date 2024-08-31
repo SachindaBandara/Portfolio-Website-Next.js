@@ -15,7 +15,7 @@ export default function Contact() {
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-28 w-[min(100%,38rem)] text-center scroll-mt-28 sm:mb-40"
+      className="mb-20 w-[min(100%,38rem)] text-center scroll-mt-28 sm:mb-28"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -51,14 +51,14 @@ export default function Contact() {
         />
         <button
           type="submit"
-          className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all"
+          className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110  hover:bg-gray-950 active:scale-105"
         >
           Submit{" "}
           <FaPaperPlane
             className="text-xs opacity-70 transition-all 
           group-hover:translate-x-1 
-          group-hover:translate-y-1
-          focus:scale-110 hover:scale-110  hover:bg-gray-950 active:scale-105"
+          group-hover:-translate-y-1
+          "
           />
         </button>
       </form>
