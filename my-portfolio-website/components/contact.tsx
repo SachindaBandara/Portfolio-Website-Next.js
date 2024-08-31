@@ -5,9 +5,11 @@ import SectionHeading from "./section-heading";
 import { FaPaperPlane } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { sendEmail } from "@/actions/sendEmails";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+
 
   return (
     <motion.section
@@ -16,8 +18,8 @@ export default function Contact() {
       className="mb-28 w-[min(100%,38rem)] text-center scroll-mt-28 sm:mb-40"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{duration: 1}}
-      viewport={{ once: true,}}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
     >
       <SectionHeading>Contact Me</SectionHeading>
       <p className="text-gray-700 -mt-4">
@@ -28,9 +30,13 @@ export default function Contact() {
         or through this form.
       </p>
 
-      <form className="mt-10 flex flex-col">
+      <form
+        className="mt-10 flex flex-col"
+        action={sendEmail}
+      >
         <input
           className="h-14 px-4 rounded-lg borderBlack"
+          name="senderEmail"
           type="email"
           placeholder="Your email"
           required
@@ -38,6 +44,7 @@ export default function Contact() {
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4"
+          name="message"
           placeholder="Your message"
           required
           maxLength={5000}
