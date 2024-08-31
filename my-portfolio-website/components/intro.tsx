@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Profile from "@/public/profile pic.jpg";
 import { delay, motion } from "framer-motion";
@@ -13,10 +13,24 @@ import {
 import { HiDownload } from "react-icons/hi";
 import Link from "next/link";
 import { FaGithubSquare } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function intro() {
+  const { ref, inView } = useInView({
+    threshold: 0.75,
+  });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection]);
+
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
@@ -53,10 +67,10 @@ export default function intro() {
         <span className="font-bold">
           UI/UX Enthusiast, Frontend Developer & Undergraduate
         </span>{" "}
-        <span>at Sabaragamuwa University of Sri Lanka.</span><br/>
+        <span>at Sabaragamuwa University of Sri Lanka.</span>
+        <br />
         <span>I enjoy creating</span>
         <span className="italic">sites & apps.</span>
-        
       </motion.h1>
 
       <motion.div
