@@ -16,6 +16,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
+
 export default function intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -73,6 +74,16 @@ export default function intro() {
           delay: 0.1,
         }}
       >
+        {/* <div>
+          <a href="#contact">
+            <MagicButton 
+              title="Contact me here"
+              position="right"
+              icon={<BsArrowRight />}
+              otherClasses={""}
+            />
+          </a>
+        </div> */}
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
@@ -84,6 +95,7 @@ export default function intro() {
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
+
         <a
           href=""
           download

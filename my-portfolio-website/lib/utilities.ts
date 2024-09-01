@@ -10,7 +10,7 @@ export const validateString = (
 };
   
 
-  export const getErrorMessage = (error: unknown): string => {
+export const getErrorMessage = (error: unknown): string => {
     let message: string;
   
     if (error instanceof Error) {
