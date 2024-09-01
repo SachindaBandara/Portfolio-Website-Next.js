@@ -33,12 +33,11 @@ let data;
       to: "jmsachindabandara@gmail.com",
       subject: "Message from contact form",
       reply_to: senderEmail as string,
-
       react: React.createElement( ContactFormEmail, {
         message: message as string,
         senderEmail: senderEmail as string,
       })
-      //react: <contactFormEmail message={message} senderEmail={senderEmail}/>
+      
 
     });
   } catch (error: unknown) {
