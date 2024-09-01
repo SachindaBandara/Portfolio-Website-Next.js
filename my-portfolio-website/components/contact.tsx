@@ -32,10 +32,12 @@ export default function Contact() {
 
       <form
         className="mt-10 flex flex-col"
-        action={sendEmail}
+        action={async (formData)=> {
+          await sendEmail(formData);
+        }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack"
+          className="text-gray-950 h-14 px-4 rounded-lg borderBlack "
           name="senderEmail"
           type="email"
           placeholder="Your email"
@@ -43,7 +45,7 @@ export default function Contact() {
           maxLength={500}
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="text-gray-950 h-52 my-3 rounded-lg borderBlack p-4"
           name="message"
           placeholder="Your message"
           required
