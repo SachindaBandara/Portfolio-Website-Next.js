@@ -6,13 +6,13 @@ import { FaPaperPlane } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmails";
-import { experimental_useFormStatus as useFormStatus } from "react-dom";
+//import { experimental_useFormStatus as useFormStatus } from "react-dom";
 import SubmitBtn from "./submit-btn";
 
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
-  const { pending } = useFormStatus();
+
 
 
   return (
@@ -37,7 +37,13 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col"
         action={async (formData)=> {
-          await sendEmail(formData);
+          const {data, error} = await sendEmail(formData);
+
+          if(error){
+            alert(error);
+            return;
+          }
+          alert("Email sent successfully! ");
         }}
       >
         <input
