@@ -1,12 +1,14 @@
-export const validateString = (value: unknown, maxLength: number) => {
-    if (!message || typeof message !== "string" || value.length > maxLength) {
-      return false;
-    }
+export const validateString = (
+  value: unknown,
+  maxLength: number
+): value is string => {
+  if (!value || typeof value !== "string" || value.length > maxLength) {
+    return false;
+  }
+
+  return true;
+};
   
-    return true;
-  };
-
-
 
   export const getErrorMessage = (error: unknown): string => {
     let message: string;
@@ -18,7 +20,7 @@ export const validateString = (value: unknown, maxLength: number) => {
     } else if (typeof error === "string") {
       message = error;
     } else {
-      message = "Unknown error";
+      message = "Something went wrong";
     }
   
     return message;
