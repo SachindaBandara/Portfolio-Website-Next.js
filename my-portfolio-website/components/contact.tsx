@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmails";
 //import { experimental_useFormStatus as useFormStatus } from "react-dom";
 import SubmitBtn from "./submit-btn";
+import toast from "react-hot-toast";
 
 
 export default function Contact() {
@@ -40,10 +41,10 @@ export default function Contact() {
           const {data, error} = await sendEmail(formData);
 
           if(error){
-            alert(error);
+            toast.error(error);
             return;
           }
-          alert("Email sent successfully! ");
+          toast.success("Email sent successfully! ");
         }}
       >
         <input
