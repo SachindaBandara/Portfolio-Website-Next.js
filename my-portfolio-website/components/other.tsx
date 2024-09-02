@@ -42,7 +42,7 @@ export default function Other() {
               fontSize: "1.5rem",
             }}
           >
-            <h3 className="font-bold capitalize text-gray-950">{item.title}</h3>
+            <h3 className="text-lg font-bold capitalize text-gray-950">{item.title}</h3>
             <p className="font-normal  text-gray-900 !mt-0">{item.subTitle}</p>
             <p className="!mt-1 !font-normal text-xs  text-gray-800 ">
               {item.description}
