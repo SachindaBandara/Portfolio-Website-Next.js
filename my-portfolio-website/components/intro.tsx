@@ -51,7 +51,7 @@ export default function intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-6 px-3 w-full text-7xl font-medium sm:text-4xl"
+        className="mb-10 mt-6 px-3 w-full text-7xl font-medium sm:text-xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -67,7 +67,7 @@ export default function intro() {
 
         <TypeWrite />
 
-        <div className="mt-[-0.75rem] text-center ">
+        <div className="mt-[-0.55rem] text-center ">
           <span className="font-bold text-[84px]">Sachinda Bandara</span>{" "}
         </div>
 
