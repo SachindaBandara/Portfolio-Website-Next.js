@@ -1,7 +1,7 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
+import { CgCollage, CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { LuGraduationCap, LuSchool, LuSchool2, LuScrollText } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -34,45 +34,46 @@ export const links = [
 ] as const;
 
 export const educationData = [
+
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Undergraduate",
+    location: "Sabaragamuwa University of Sri Lanka",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I am following degree in BSc(Hons)Computing and Information Sysytem at Sabaragamuwa University of Sri Lanka.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2022 - present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "GCE Advanced Level Examination",
+    location: "R/kuruwita Central College",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I passed the advanced level examination 2020.",
+    icon: React.createElement(LuSchool2),
+    date: "2017 - 2020",
   },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
+  // {
+  //   title: "Full-Stack Developer",
+  //   location: "Houston, TX",
+  //   description:
+  //     "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+  //   icon: React.createElement(FaReact),
+  //   date: "2021 - present",
+  // },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "AgroPulse",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "AgroPulse is a n insects detection system that help to farmers.",
+    tags: ["Figma","React", "Flask", "MongoDB", "Tailwind CSS", "TensorFlow", "Git"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "LMS",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Learning Management System for the government school",
+    tags: ["Figma","React", "Node.js", "Express.js", "Tailwind CSS", "MongoDB","Git","Trello",],
     imageUrl: rmtdevImg,
   },
   {
