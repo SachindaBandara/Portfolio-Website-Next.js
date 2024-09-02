@@ -11,7 +11,7 @@ import { otherActivityData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Other() {
-  const { ref } = useSectionInView("Education");
+  const { ref } = useSectionInView("Other");
 
   return (
     <section
