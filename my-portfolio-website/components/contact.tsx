@@ -6,7 +6,7 @@ import { FaPaperPlane } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmails";
-//import { experimental_useFormStatus as useFormStatus } from "react-dom";
+import { useFormStatus } from "react-dom";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
@@ -27,7 +27,7 @@ export default function Contact() {
       viewport={{ once: true }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-white -mt-4">
+      <p className=" text-gray-200 -mt-4">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:jmsachindabandara@gmail.com">
           jmsachindabandara@gmail.com
@@ -48,7 +48,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="text-gray-950 h-14 px-4 rounded-lg borderBlack "
+          className="text-white  bg-gray-800 h-14 px-4 rounded-lg borderBlack "
           name="senderEmail"
           type="email"
           placeholder="Your email"
@@ -56,7 +56,7 @@ export default function Contact() {
           maxLength={500}
         />
         <textarea
-          className="text-gray-950 h-52 my-3 rounded-lg borderBlack p-4"
+          className="text-white bg-gray-800 h-52 my-3 rounded-lg borderBlack p-4"
           name="message"
           placeholder="Your message"
           required
