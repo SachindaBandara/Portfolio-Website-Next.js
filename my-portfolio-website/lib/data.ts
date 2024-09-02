@@ -72,15 +72,22 @@ export const projectsData = [
   {
     title: "LMS",
     description:
-      "Learning Management System for the government school",
+      "Learning Management System for the government school.",
     tags: ["Figma","React", "Node.js", "Express.js", "Tailwind CSS", "MongoDB","Git","Trello",],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "e-Library Management System",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["React", "PHP", "Laravel", "MySQL", "Tailwind CSS", "Git"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Deals.lk",
+    description:
+      "Deals.lk is an e-commerce website for the global market.",
+    tags: ["HTML", "CSS", "JavaScript", "Git"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
