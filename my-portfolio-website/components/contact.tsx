@@ -48,7 +48,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="text-white  bg-gray-800 h-14 px-4 rounded-lg borderBlack "
+          className="text-white  bg-slate-800 h-14 px-4 rounded-lg borderBlack "
           name="senderEmail"
           type="email"
           placeholder="Your email"
@@ -56,7 +56,7 @@ export default function Contact() {
           maxLength={500}
         />
         <textarea
-          className="text-white bg-gray-800 h-52 my-3 rounded-lg borderBlack p-4"
+          className="text-white bg-slate-800 h-52 my-3 rounded-lg borderBlack p-4"
           name="message"
           placeholder="Your message"
           required
