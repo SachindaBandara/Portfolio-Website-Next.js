@@ -28,6 +28,10 @@ export const links = [
     hash: "#skills",
   },
   {
+    name: "Other",
+    hash: "#other",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
@@ -108,4 +112,32 @@ export const skillsData = [
   "PHP",
   "Laravel",
   "Framer Motion",
+] as const;
+
+export const otherActivityData = [
+
+  {
+    title: "Volunteer",
+    subTitle: "Graphic Designer",
+    description:
+      "Society of Computer Sciences - Sabaragamuwa University of Sri Lanka",
+    icon: React.createElement(LuSchool),
+    date: "Jun 2024 - present",
+  },
+  {
+    title: "Volunteer",
+    subTitle: "Graphic Designer",
+    description:
+      "ZeroPlastic at Sabaragamuwa University of Sri Lanka",
+    icon: React.createElement(LuSchool),
+    date: "Mar 2024 - presen",
+  },
+  {
+    title: "Volunteer",
+    subTitle: "Graphic Designer",
+    description:
+      "IEEE Student Branch of Sabaragamuwa University of Sri Lanka",
+    icon: React.createElement(LuSchool),
+    date: "Aug 2023 - present",
+  },
 ] as const;
