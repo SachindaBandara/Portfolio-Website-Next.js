@@ -15,7 +15,7 @@ import Link from "next/link";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-
+import TypeWrite from "./TypeWrite";
 
 export default function intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -51,11 +51,11 @@ export default function intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.4] sm:text-4xl"
+        className="mb-10 mt-6 px-3 w-full text-7xl font-medium sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Sachinda Bandara.</span> <br />
+        {/* <span className="font-bold">Hello, I'm Sachinda Bandara.</span> <br />
         I'm an{" "}
         <span className="font-bold">
           UI/UX Enthusiast, Frontend Developer & Undergraduate
@@ -63,7 +63,14 @@ export default function intro() {
         <span>at Sabaragamuwa University of Sri Lanka.</span>
         <br />
         <span>I enjoy creating</span>
-        <span className="italic">sites & apps.</span>
+        <span className="italic">sites & apps.</span> */}
+
+        <TypeWrite />
+
+        <div className="mt-[-0.75rem] text-center ">
+          <span className="font-bold text-[84px]">Sachinda Bandara</span>{" "}
+        </div>
+
       </motion.h1>
 
       <motion.div
@@ -129,6 +136,9 @@ export default function intro() {
           <BsDribbble />
         </a>
       </motion.div>
+
+
+      
     </section>
   );
 }
