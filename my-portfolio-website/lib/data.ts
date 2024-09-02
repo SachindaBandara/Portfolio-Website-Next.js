@@ -130,7 +130,7 @@ export const otherActivityData = [
     description:
       "ZeroPlastic at Sabaragamuwa University of Sri Lanka",
     icon: React.createElement(LuSchool),
-    date: "Mar 2024 - presen",
+    date: "Mar 2024 - present",
   },
   {
     title: "Volunteer",

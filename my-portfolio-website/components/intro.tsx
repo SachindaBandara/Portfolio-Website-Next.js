@@ -55,22 +55,11 @@ export default function intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        {/* <span className="font-bold">Hello, I'm Sachinda Bandara.</span> <br />
-        I'm an{" "}
-        <span className="font-bold">
-          UI/UX Enthusiast, Frontend Developer & Undergraduate
-        </span>{" "}
-        <span>at Sabaragamuwa University of Sri Lanka.</span>
-        <br />
-        <span>I enjoy creating</span>
-        <span className="italic">sites & apps.</span> */}
-
         <TypeWrite />
 
         <div className="mt-[-0.55rem] text-center ">
           <span className="font-bold text-[84px]">Sachinda Bandara</span>{" "}
         </div>
-
       </motion.h1>
 
       <motion.div
@@ -91,9 +80,10 @@ export default function intro() {
             />
           </a>
         </div> */}
+
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 border-2 border-amber-400 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -136,9 +126,6 @@ export default function intro() {
           <BsDribbble />
         </a>
       </motion.div>
-
-
-      
     </section>
   );
 }
