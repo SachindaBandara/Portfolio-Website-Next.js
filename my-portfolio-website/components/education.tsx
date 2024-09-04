@@ -23,35 +23,38 @@ export default function Education() {
       <VerticalTimeline lineColor="">
         {educationData.map((item, index) => (
           <React.Fragment key={index}>
-          <VerticalTimelineElement
-            visible={true}
-            contentStyle={{
-              background: "#f3f4f6",
-              boxShadow: "none",
-              border: "1px solid rgba(0, 0, 0, 0.05)",
-              textAlign: "left",
-              padding: "1.5rem 2rem",
-            }}
-            contentArrowStyle={{
-              borderRight: "0.6rem solid #ffffff",
-            }}
-            date={item.date}
-            icon={item.icon}
-            iconStyle={{
-              background: "black",
-              fontSize: "1.5rem",
-            }}
-          >
-            <h3 className="text-lg font-bold capitalize text-gray-950">{item.title}</h3>
-            <p className="font-normal  text-gray-950 !mt-0">{item.location}</p>
-            <p className="!mt-1 !font-normal text-xs  text-gray-800 ">
-              {item.description}
-            </p>
-          </VerticalTimelineElement>
+            <VerticalTimelineElement
+              visible={true}
+              contentStyle={{
+                background: "#f3f4f6",
+                boxShadow: "none",
+                border: "1px solid rgba(0, 0, 0, 0.05)",
+                textAlign: "left",
+                padding: "1.5rem 2rem",
+              }}
+              contentArrowStyle={{
+                borderRight: "0.6rem solid #ffffff",
+              }}
+              date={item.date}
+              icon={item.icon}
+              iconStyle={{
+                background: "black",
+                fontSize: "1.5rem",
+              }}
+            >
+              <h3 className="text-lg font-bold capitalize text-gray-950">
+                {item.title}
+              </h3>
+              <p className="font-normal  text-gray-950 !mt-0">
+                {item.location}
+              </p>
+              <p className="!mt-1 !font-normal text-xs  text-gray-800 ">
+                {item.description}
+              </p>
+            </VerticalTimelineElement>
           </React.Fragment>
         ))}
       </VerticalTimeline>
-      
     </section>
   );
 }

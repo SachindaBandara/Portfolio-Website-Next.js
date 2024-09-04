@@ -10,11 +10,8 @@ import { useFormStatus } from "react-dom";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
-
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
-
-
 
   return (
     <motion.section
@@ -37,10 +34,10 @@ export default function Contact() {
 
       <form
         className="mt-10 flex flex-col"
-        action={async (formData)=> {
-          const {data, error} = await sendEmail(formData);
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
 
-          if(error){
+          if (error) {
             toast.error(error);
             return;
           }
@@ -62,7 +59,7 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-       <SubmitBtn/>
+        <SubmitBtn />
       </form>
     </motion.section>
   );

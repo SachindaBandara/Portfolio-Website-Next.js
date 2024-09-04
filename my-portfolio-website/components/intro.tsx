@@ -58,8 +58,7 @@ export default function intro() {
         <TypeWrite />
 
         <div className="mt-[-0.55rem] text-center ">
-          <span className="font-bold text-[84px]">
-            Sachinda Bandara</span>{" "}
+          <span className="font-bold text-[84px]">Sachinda Bandara</span>{" "}
         </div>
       </motion.h1>
 
