@@ -83,7 +83,7 @@ export default function intro() {
 
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 border-2 border-amber-400 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3  flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -96,7 +96,7 @@ export default function intro() {
         <a
           href=""
           download
-          className="group bg-gray-100 text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/5 hover:text-gray-950"
+          className="group bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/5 hover:text-gray-950"
         >
           Download CV{" "}
           <HiDownload className="opacity-70 group-hover:translate-y-1 transition" />
