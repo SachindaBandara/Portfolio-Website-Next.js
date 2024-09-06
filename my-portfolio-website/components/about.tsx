@@ -19,14 +19,14 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
 
-      <p className="mb-3 text-slate-200">
+      <p className="mb-3 text-gray-800">
         I'm passionate about building exceptional user experiences by weaving
         together the power of frontend development. I'm constantly expanding my
         knowledge of UI & UX, with the goal of creating seamless interfaces that
         are both functional and aesthetically pleasing.
       </p>
 
-      <p className=" text-slate-200">
+      <p className=" text-gray-800">
         I thrive on innovation and am always eager to learn about the latest
         advancements in technology and design trends.
       </p>
