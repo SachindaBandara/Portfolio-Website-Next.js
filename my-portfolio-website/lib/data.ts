@@ -63,29 +63,22 @@ export const projectsData = [
   {
     title: "AgroPulse",
     description:
-      "AgroPulse is a n insects detection system that help to farmers.",
-    tags: ["Figma","React", "Flask", "MongoDB", "Tailwind CSS", "TensorFlow", "Git"],
+      "AgroPulse is an innovative pest management system designed to empower farmers with advanced pest identification and control with eco-friendly solutions.",
+    tags: ["Figma","React", "Tailwind CSS", "Flask", "MongoDB", "Git"],
     imageUrl: corpcommentImg,
   },
   {
     title: "LMS",
     description:
-      "Learning Management System for the government school.",
-    tags: ["Figma","React", "Node.js", "Express.js", "Tailwind CSS", "MongoDB","Git","Trello",],
+      "Learning Management System is designed to facilitate seamless communication, efficient information management, and an enriched learning environment for students and staff alike.",
+    tags: ["Figma", "MERN", "Git",],
     imageUrl: rmtdevImg,
-  },
-  {
-    title: "e-Library Management System",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "PHP", "Laravel", "MySQL", "Tailwind CSS", "Git"],
-    imageUrl: wordanalyticsImg,
   },
   {
     title: "Deals.lk",
     description:
-      "Deals.lk is an e-commerce website for the global market.",
-    tags: ["HTML", "CSS", "JavaScript", "Git"],
+      "Deals.lk is a vibrant e-commerce platform designed to revolutionize the buying and selling wide range of vehicles in Sri Lanka.",
+    tags: ["Figma", "React", "Tailwind CSS", "Firebase", "Git"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;

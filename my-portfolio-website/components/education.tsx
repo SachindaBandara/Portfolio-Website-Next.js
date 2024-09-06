@@ -17,7 +17,7 @@ export default function Education() {
     <section
       id="education"
       ref={ref}
-      className="scroll-mt-28 mb-28 sm:mb-40 relative" /* Added 'relative' position */
+      className="scroll-mt-28 mb-20 sm:mb-30 relative" /* Added 'relative' position */
     >
       <SectionHeading>Education</SectionHeading>
       <VerticalTimeline lineColor="">
