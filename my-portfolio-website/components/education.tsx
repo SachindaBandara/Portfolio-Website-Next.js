@@ -26,29 +26,30 @@ export default function Education() {
             <VerticalTimelineElement
               visible={true}
               contentStyle={{
-                background: "#f3f4f6",
+                background: "#020617",
                 boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
+                border: "3px solid #f8fafc",
                 textAlign: "left",
-                padding: "1.5rem 2rem",
+                padding: "1.5rem 3rem",
+
               }}
               contentArrowStyle={{
-                borderRight: "0.6rem solid #ffffff",
+                borderRight: "0.6rem solid #f8fafc",
               }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background: "black",
+                background: "#020617",
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="text-lg font-bold capitalize text-gray-950">
+              <h3 className="text-xl font-bold capitalize text-slate-50">
                 {item.title}
               </h3>
-              <p className="font-normal  text-gray-950 !mt-0">
+              <p className="font-normal  text-slate-100 !mt-0">
                 {item.location}
               </p>
-              <p className="!mt-1 !font-normal text-xs  text-gray-800 ">
+              <p className="!mt-1 !font-normal text-xs  text-slate-300 ">
                 {item.description}
               </p>
             </VerticalTimelineElement>
