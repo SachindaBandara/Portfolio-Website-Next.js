@@ -1,6 +1,4 @@
 import React from "react";
-import { CgCollage, CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap, LuSchool, LuSchool2, LuScrollText } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
