@@ -10,7 +10,7 @@ export default function TypeWrite() {
           <Typewriter
             options={{
               strings: [
-                "an UI/UX Enthusiast",
+                "an UI/UX Engineer",
                 " a Frontend Developer",
                 " a Volunteer",
               ],

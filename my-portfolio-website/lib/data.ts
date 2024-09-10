@@ -43,11 +43,11 @@ export const educationData = [
   },
   {
     title: "GCE Advanced Level Examination",
-    location: "R/kuruwita Central College",
+    location: "R/Kuruwita Central College",
     description:
       "I passed the advanced level examination 2020.",
     icon: React.createElement(LuSchool2),
-    date: "2017 - 2020",
+    date: "2018 - 2020",
   },
   // {
   //   title: "Full-Stack Developer",
