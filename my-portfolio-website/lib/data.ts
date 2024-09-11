@@ -1,6 +1,6 @@
 import React from "react";
 import { LuGraduationCap, LuSchool, LuSchool2, LuScrollText } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import agropulse from "@/public/agropulse.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -65,7 +65,7 @@ export const projectsData = [
     description:
       "AgroPulse is an innovative pest management system designed to empower farmers with advanced pest identification and control with eco-friendly solutions.",
     tags: ["Figma","React", "Tailwind CSS", "Flask", "MongoDB", "Git"],
-    imageUrl: corpcommentImg,
+    imageUrl: agropulse,
   },
   {
     title: "LMS",
