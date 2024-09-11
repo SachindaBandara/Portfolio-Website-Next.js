@@ -96,32 +96,32 @@ export default function intro() {
         <a
           href=""
           download
-          className="group bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/5 hover:text-gray-950"
+          className="group bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/4 hover:text-gray-950"
         >
           Download CV{" "}
           <HiDownload className="opacity-70 group-hover:translate-y-1 transition" />
         </a>
         <a
           href="https://www.linkedin.com/in/sachinda-bandara-2a9344248/"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none ocus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/5"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none ocus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/4"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/SachindaBandara"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/5"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/4"
         >
           <FaGithubSquare />
         </a>
         <a
           href="https://www.behance.net/sachindubandar/projects"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/5"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/4"
         >
           <BsBehance />
         </a>
         <a
           href="https://dribbble.com/Sachinda_Bandara"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none ocus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/5"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full outline-none ocus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/4"
         >
           <BsDribbble />
         </a>
