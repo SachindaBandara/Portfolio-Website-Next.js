@@ -33,7 +33,7 @@ function EmailForm() {
       user_id: publicKey,
       template_params: {
         from_email: email,
-        to_name: "Sachinda",
+        to_name: "Sachinda Bandara",
         message: message,
       },
     };
