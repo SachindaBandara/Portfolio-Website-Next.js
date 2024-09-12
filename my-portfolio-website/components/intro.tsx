@@ -70,17 +70,6 @@ export default function intro() {
           delay: 0.1,
         }}
       >
-        {/* <div>
-          <a href="#contact">
-            <MagicButton 
-              title="Contact me here"
-              position="right"
-              icon={<BsArrowRight />}
-              otherClasses={""}
-            />
-          </a>
-        </div> */}
-
         <Link
           href="#contact"
           className="group bg-gray-800 text-white px-7 py-3  flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
